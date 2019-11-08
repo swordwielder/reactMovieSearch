@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { ReactiveBase } from '@appbaseio/reactivesearch';
+import Navbar from './Component/NavBar.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Main extends React.Component {
+  render() {
+    return (
+      <div className="main-container">
+        <ReactiveBase
+          app="tidy-grocer-ddrskv"
+          credentials="1ZyzNH0jN:e3a84017-503f-4502-8e89-6a010b645f23"
+         >
+          Hello from ReactiveSearch!
+
+          <Navbar />
+        </ReactiveBase>
+
+        
+        
+      </div>
+    );
+  }
 }
 
-export default App;
+export default Main;

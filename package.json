@@ -1,11 +1,12 @@
 {
   "name": "moviesearch",
-  "version": "0.1.0",
+  "version": "10.2.3",
   "private": true,
   "dependencies": {
+    "@appbaseio/reactivesearch": "^3.0.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
